@@ -1,3 +1,4 @@
+// asincrono secuencial con async-await
 const { readFile } = require('node:fs/promises');
 
 
