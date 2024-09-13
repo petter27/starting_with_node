@@ -1,5 +1,6 @@
 const fs = require('node:fs/promises');
 const path = require('node:path');
+const pc = require('picocolors');
 
 // Podemos pasar el directorio como argumento
 const folder = process.argv[2] ?? '.'; 
@@ -9,7 +10,7 @@ async function listFiles(directory) {
     try{
          files = await fs.readdir(directory);
     }catch(err){
-        console.error(`No se pudo leer el directorio: ${directory}`);
+        console.error(pc.bgRed(`No se pudo leer el directorio: ${directory}`));
         process.exit(1);
     }
 
