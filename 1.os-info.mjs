@@ -1,4 +1,4 @@
-//import { totalmem, freemem, type, platform, arch, release, userInfo, cpus, uptime } from 'node:os';
+// import { totalmem, freemem, type, platform, arch, release, userInfo, cpus, uptime } from 'node:os';
 import os from 'node:os';
 
 console.log('Información del sistema operativo: ');
