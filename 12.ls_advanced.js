@@ -30,7 +30,7 @@ async function listFiles(directory) {
         const fileSize = stats.size.toString();
         const fileModified = stats.mtime.toLocaleString();
     
-        return `${fileType.padEnd(5)} | ${file.padEnd(30)} | ${fileSize.toString().padStart(10)} | ${fileModified}`;
+        return `${pc.blue(fileType.padEnd(5))} | ${pc.green(file.padEnd(30))} | ${pc.yellow(fileSize.toString().padStart(10))} | ${pc.underline(fileModified)}`;
 
     })
 
